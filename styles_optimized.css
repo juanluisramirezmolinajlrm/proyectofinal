@@ -1,0 +1,72 @@
+/* Herencia y Cascada */
+
+/* Aplicar estilos generales a todo el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 168, 133);
+}
+
+/* Encabezado, hereda la tipografía del body */
+header {
+    background-color: #f87234;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Especificidad: Selector más específico para los enlaces dentro de la barra de navegación */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 4px; /* Agregando un borde redondeado para una mejor interacción */
+}
+
+nav ul li a:hover {
+    background-color: #f87234;
+    color: white;
+}
+
+/* Contenedor principal, hereda los estilos del body */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Especificidad: Estilo para cada sección dentro del contenedor */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Mejorando la separación y claridad de los títulos */
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #f87234;
+    padding-bottom: 0.5rem;
+}
+
+/* Cascada: Estilo de las imágenes */
+.imagen {
+    width: 48%;
+    margin: 1%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Especificidad: Estilo para el pie de página */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+}
