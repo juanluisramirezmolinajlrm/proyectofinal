@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Sencilla</title>
-    <link rel="stylesheet" href="styles_optimized.css"> <!-- Enlazando con el nuevo archivo CSS -->
+    <link rel="stylesheet" href="styles_optimized.css"> <!-- Enlace al CSS original optimizado -->
+    <link rel="stylesheet" href="styles_flexbox.css">  <!-- Enlace al nuevo CSS de Flexbox -->
 </head>
 <body>
     <header>
@@ -29,8 +30,10 @@
         </section>
         <section id="imagenes">
             <h2>Galería de Imágenes</h2>
-            <img src="Energias-renovables-eolica-solar-celdas-1024x576.jpg" alt="Descripción de Imagen 1" class="imagen">
-            <img src="colage-energias-renovables-y-problema-del-agua.jpg" alt="Descripción de Imagen 2" class="imagen">
+            <div class="flexbox-gallery">
+                <img src="Energias-renovables-eolica-solar-celdas-1024x576.jpg" alt="Descripción de Imagen 1" class="imagen">
+                <img src="colage-energias-renovables-y-problema-del-agua.jpg" alt="Descripción de Imagen 2" class="imagen">
+            </div>
         </section>
         <section id="pdf">
             <h2>Descarga de libro de energías renovables</h2>
