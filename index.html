@@ -4,54 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Sencilla</title>
-
-
-
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: rgb(243, 168, 133);
-        }
-
-        header {
-            background-color: #f87234;
-            color: rgb(255, 255, 255);
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        section {
-            padding: 20px;
-            border-bottom: 1px solid #000000;
-        }
-
-        h1,
-        h2 {
-            margin: 0;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
-    </style>
-
-
-
-    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -59,29 +12,29 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#seccionaaaaaaaaaaaaaaaaaaaa">La Revolución de las Energías Renovables</a></li>
-            <li><a href="#seccionbbbbbbbbbbbbbbbbbbbb">Beneficios Ambientales y Sociales de las Energías Verdes</a></li>
-            <li><a href="#imagenes">Imágenes de energias renovables</a></li>
+            <li><a href="#seccion1">La Revolución de las Energías Renovables</a></li>
+            <li><a href="#seccion2">Beneficios Ambientales y Sociales de las Energías Verdes</a></li>
+            <li><a href="#imagenes">Imágenes de energías renovables</a></li>
             <li><a href="#pdf">PDF</a></li>
         </ul>
     </nav>
-    <main>
-        <section id="seccionaaaaaaaaaaaaaaaaaaaa">
-            <h2> La Revolución de las Energías Renovables</h2>
-            <p> Las energías renovables están transformando la forma en que producimos y consumimos electricidad. Fuentes como la solar, eólica, hidroeléctrica y geotérmica ofrecen alternativas limpias y sostenibles que reducen las emisiones de carbono y disminuyen la dependencia de combustibles fósiles. Estas tecnologías no solo benefician al medio ambiente, sino que también impulsan economías locales mediante la generación de empleos verdes y el acceso a energía más asequible y segura para comunidades en todo el mundo..</p>
+    <main class="container">
+        <section id="seccion1">
+            <h2>La Revolución de las Energías Renovables</h2>
+            <p>Las energías renovables están transformando la forma en que producimos y consumimos electricidad. Fuentes como la solar, eólica, hidroeléctrica y geotérmica ofrecen alternativas limpias y sostenibles que reducen las emisiones de carbono y disminuyen la dependencia de combustibles fósiles. Estas tecnologías no solo benefician al medio ambiente, sino que también impulsan economías locales mediante la generación de empleos verdes y el acceso a energía más asequible y segura para comunidades en todo el mundo.</p>
         </section>
-        <section id="seccionbbbbbbbbbbbbbbbbbbbb">
+        <section id="seccion2">
             <h2>Beneficios Ambientales y Sociales de las Energías Verdes</h2>
-            <p>Adoptar energías renovables es esencial para enfrentar el cambio climático. Estas tecnologías reducen la contaminación, preservan recursos naturales y promueven la biodiversidad. Además, fomentan la equidad social al llevar electricidad a regiones remotas y mejorar la calidad de vida de millones de personas. Al priorizar fuentes limpias, no solo protegemos el planeta, sino que también construimos un futuro más justo y sostenible para las próximas generaciones..</p>
+            <p>Adoptar energías renovables es esencial para enfrentar el cambio climático. Estas tecnologías reducen la contaminación, preservan recursos naturales y promueven la biodiversidad. Además, fomentan la equidad social al llevar electricidad a regiones remotas y mejorar la calidad de vida de millones de personas. Al priorizar fuentes limpias, no solo protegemos el planeta, sino que también construimos un futuro más justo y sostenible para las próximas generaciones.</p>
         </section>
         <section id="imagenes">
             <h2>Galería de Imágenes</h2>
-            <img src="Energias-renovables-eolica-solar-celdas-1024x576.jpg" alt="Descripción de Imagen 1" width="300">
-            <img src="colage-energias-renovables-y-problema-del-agua.jpg" width="300">
+            <img src="Energias-renovables-eolica-solar-celdas-1024x576.jpg" alt="Descripción de Imagen 1" class="imagen">
+            <img src="colage-energias-renovables-y-problema-del-agua.jpg" alt="Descripción de Imagen 2" class="imagen">
         </section>
         <section id="pdf">
-            <h2>Descarga de libro de energías renovables </h2>
-            <a href="energias renovables argentina.pdf" download>Haz clic aquí para descargar el PDF</a>
+            <h2>Descarga de libro de energías renovables</h2>
+            <a href="energias_renovables_argentina.pdf" download>Haz clic aquí para descargar el PDF</a>
         </section>
     </main>
     <footer>
@@ -89,5 +42,6 @@
     </footer>
 </body>
 </html>
+
 
    
