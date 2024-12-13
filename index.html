@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="styles_optimized.css">
     <link rel="stylesheet" href="styles_flexbox.css">
     <link rel="stylesheet" href="styles_flexbox_layout.css">
-    <link rel="stylesheet" href="styles_positioning.css"> <!-- Nuevo archivo de posicionamiento -->
-    <link rel="stylesheet" href="styles_responsive.css"> <!-- Nuevo archivo para responsividad -->
+    <link rel="stylesheet" href="styles_positioning.css">
+    <link rel="stylesheet" href="styles_responsive.css">
+    <link rel="stylesheet" href="styles_grid.css"> <!-- Nuevo archivo para Grid -->
 </head>
 <body>
     <header>
@@ -20,62 +21,41 @@
             <li><a href="#seccion2">Beneficios Ambientales</a></li>
             <li><a href="#imagenes">Imágenes</a></li>
             <li><a href="#tarjetas">Tarjetas Informativas</a></li>
-            <li><a href="#destacado">Elemento Destacado</a></li>
+            <li><a href="#pdf">Descarga de PDF</a></li>
+            <li><a href="#grid-ejemplo">Ejemplo de Grid</a></li>
         </ul>
     </nav>
     <main class="container">
-        <section id="seccion1" class="seccion-flex">
+        <section id="seccion1">
             <h2>La Revolución de las Energías Renovables</h2>
-            <p>Las energías renovables están transformando la forma en que producimos y consumimos electricidad.</p>
+            <p>Las energías renovables están transformando la forma en que producimos y consumimos electricidad. Fuentes como la solar, eólica, hidroeléctrica y geotérmica ofrecen alternativas limpias y sostenibles que reducen las emisiones de carbono y disminuyen la dependencia de combustibles fósiles. Estas tecnologías no solo benefician al medio ambiente, sino que también impulsan economías locales mediante la generación de empleos verdes y el acceso a energía más asequible y segura para comunidades en todo el mundo.</p>
         </section>
-        <section id="seccion2" class="seccion-flex">
-            <h2>Beneficios Ambientales y Sociales</h2>
-            <p>Adoptar energías renovables es esencial para enfrentar el cambio climático.</p>
+        <section id="seccion2">
+            <h2>Beneficios Ambientales y Sociales de las Energías Verdes</h2>
+            <p>Adoptar energías renovables es esencial para enfrentar el cambio climático. Estas tecnologías reducen la contaminación, preservan recursos naturales y promueven la biodiversidad. Además, fomentan la equidad social al llevar electricidad a regiones remotas y mejorar la calidad de vida de millones de personas. Al priorizar fuentes limpias, no solo protegemos el planeta, sino que también construimos un futuro más justo y sostenible para las próximas generaciones.</p>
         </section>
         <section id="imagenes">
             <h2>Galería de Imágenes</h2>
-            <div class="flex-gallery">
-                <img src="Energias-renovables-eolica-solar-celdas-1024x576.jpg" alt="Imagen 1" class="imagen">
-                <img src="colage-energias-renovables-y-problema-del-agua.jpg" alt="Imagen 2" class="imagen">
-            </div>
+            <img src="Energias-renovables-eolica-solar-celdas-1024x576.jpg" alt="Descripción de Imagen 1" class="imagen">
+            <img src="colage-energias-renovables-y-problema-del-agua.jpg" alt="Descripción de Imagen 2" class="imagen">
         </section>
-        <section id="tarjetas">
-            <h2>Tarjetas Informativas</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Energía Solar</h3>
-                    <p>Una fuente de energía limpia y sostenible aprovechada a través de paneles solares.</p>
-                </div>
-                <div class="card">
-                    <h3>Energía Eólica</h3>
-                    <p>Genera electricidad a partir de la fuerza del viento usando turbinas.</p>
-                </div>
-                <div class="card">
-                    <h3>Energía Geotérmica</h3>
-                    <p>Aprovecha el calor del interior de la Tierra para generar energía.</p>
-                </div>
-            </div>
-        </section>
-        <section id="destacado">
-            <h2>Elemento Destacado</h2>
-            <p class="destacado">Este texto está posicionado con propiedades avanzadas para resaltar su importancia.</p>
-        </section>
-
-        
-    </section>
         <section id="pdf">
             <h2>Descarga de libro de energías renovables</h2>
             <a href="energias_renovables_argentina.pdf" download>Haz clic aquí para descargar el PDF</a>
         </section>
-
-    
-    
+        <section id="grid-ejemplo">
+            <h2>Ejemplo de Diseño con Grid</h2>
+            <div class="grid-container">
+                <div class="item item1">Encabezado</div>
+                <div class="item item2">Barra lateral</div>
+                <div class="item item3">Contenido principal</div>
+                <div class="item item4">Contenido adicional</div>
+                <div class="item item5">Pie de página</div>
+            </div>
+        </section>
     </main>
-    <!-- Botón flotante -->
-    <button class="boton-flotante">Contacto</button>
     <footer>
         <p>&copy; 2024 Mi Página Web</p>
     </footer>
 </body>
 </html>
-
