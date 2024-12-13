@@ -1,0 +1,67 @@
+/* Responsividad */
+
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .container {
+        padding: 0.5rem;
+        box-shadow: none;
+    }
+
+    .flex-gallery img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .boton-flotante {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Ajustes específicos para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        padding: 0.5rem;
+    }
+
+    .destacado {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
