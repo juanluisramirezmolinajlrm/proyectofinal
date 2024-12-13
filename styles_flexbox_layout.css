@@ -1,0 +1,67 @@
+/* Aplicar estilos Flexbox adicionales */
+
+/* Flexbox para organizar las secciones principales */
+.seccion-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+/* Galería de imágenes usando Flexbox */
+.flex-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.imagen {
+    flex: 1 1 calc(48% - 1rem); /* Dos imágenes por fila */
+    max-width: calc(48% - 1rem);
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor para tarjetas informativas */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Estilos de las tarjetas */
+.card {
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 1rem); /* Tres tarjetas por fila */
+    max-width: calc(30% - 1rem);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efectos hover en tarjetas */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del texto dentro de las tarjetas */
+.card h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+.card p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
