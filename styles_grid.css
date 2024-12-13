@@ -1,0 +1,56 @@
+/* Estilos para Grid */
+
+/* Contenedor Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Dos columnas con diferentes proporciones */
+    grid-template-rows: auto auto auto; /* Filas ajustables automáticamente */
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+    gap: 1rem; /* Espaciado entre los elementos */
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Elementos dentro del Grid */
+.item {
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Áreas del Grid */
+.item1 {
+    grid-area: header; /* Línea del encabezado */
+    background-color: #f87234;
+    color: white;
+}
+
+.item2 {
+    grid-area: sidebar; /* Línea de la barra lateral */
+    background-color: #f4a261;
+}
+
+.item3 {
+    grid-area: main; /* Línea del contenido principal */
+    background-color: #2a9d8f;
+    color: white;
+}
+
+.item4 {
+    grid-area: extra; /* Línea para contenido adicional */
+    background-color: #e9c46a;
+}
+
+.item5 {
+    grid-area: footer; /* Línea del pie de página */
+    background-color: #264653;
+    color: white;
+}
