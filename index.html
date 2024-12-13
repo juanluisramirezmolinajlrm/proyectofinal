@@ -9,7 +9,29 @@
     <link rel="stylesheet" href="styles_flexbox_layout.css">
     <link rel="stylesheet" href="styles_positioning.css">
     <link rel="stylesheet" href="styles_responsive.css">
-    <link rel="stylesheet" href="styles_grid.css"> <!-- Nuevo archivo para Grid -->
+    <link rel="stylesheet" href="styles_grid.css">
+    <style>
+        .ventana {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 300px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            overflow: auto;
+            z-index: 1000;
+        }
+        .ventana .cerrar {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -39,6 +61,23 @@
             <img src="Energias-renovables-eolica-solar-celdas-1024x576.jpg" alt="Descripción de Imagen 1" class="imagen">
             <img src="colage-energias-renovables-y-problema-del-agua.jpg" alt="Descripción de Imagen 2" class="imagen">
         </section>
+        <section id="tarjetas">
+            <h2>Tarjetas Informativas</h2>
+            <div class="flex-container">
+                <div class="tarjeta">
+                    <h3>Solar</h3>
+                    <p>Energía obtenida del sol, limpia y abundante.</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Eólica</h3>
+                    <p>Energía generada por el viento, sostenible y económica.</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Hidroeléctrica</h3>
+                    <p>Energía del agua en movimiento, eficiente y renovable.</p>
+                </div>
+            </div>
+        </section>
         <section id="pdf">
             <h2>Descarga de libro de energías renovables</h2>
             <a href="energias_renovables_argentina.pdf" download>Haz clic aquí para descargar el PDF</a>
@@ -57,5 +96,10 @@
     <footer>
         <p>&copy; 2024 Mi Página Web</p>
     </footer>
+    <div class="ventana" id="ventanaFlotante">
+        <span class="cerrar" onclick="document.getElementById('ventanaFlotante').style.display='none'">&times;</span>
+        <h3>Información Adicional</h3>
+        <p>Esta ventana flotante contiene contenido adicional relevante para los visitantes.</p>
+    </div>
 </body>
 </html>
