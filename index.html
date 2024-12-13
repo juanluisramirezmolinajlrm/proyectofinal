@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Energías Renovables</title>
-    <link rel="stylesheet" href="styles_optimized.css"> <!-- Enlace al CSS original -->
-    <link rel="stylesheet" href="styles_flexbox.css">   <!-- Enlace al CSS Flexbox anterior -->
-    <link rel="stylesheet" href="styles_flexbox_layout.css"> <!-- Nuevo CSS con Flexbox adicional -->
+    <link rel="stylesheet" href="styles_optimized.css">
+    <link rel="stylesheet" href="styles_flexbox.css">
+    <link rel="stylesheet" href="styles_flexbox_layout.css">
+    <link rel="stylesheet" href="styles_positioning.css"> <!-- Nuevo archivo de posicionamiento -->
 </head>
 <body>
     <header>
@@ -18,16 +19,17 @@
             <li><a href="#seccion2">Beneficios Ambientales</a></li>
             <li><a href="#imagenes">Imágenes</a></li>
             <li><a href="#tarjetas">Tarjetas Informativas</a></li>
+            <li><a href="#destacado">Elemento Destacado</a></li>
         </ul>
     </nav>
     <main class="container">
         <section id="seccion1" class="seccion-flex">
             <h2>La Revolución de las Energías Renovables</h2>
-            <p>Las energías renovables están transformando la forma en que producimos y consumimos electricidad. Fuentes como la solar y la eólica ofrecen alternativas limpias y sostenibles.</p>
+            <p>Las energías renovables están transformando la forma en que producimos y consumimos electricidad.</p>
         </section>
         <section id="seccion2" class="seccion-flex">
             <h2>Beneficios Ambientales y Sociales</h2>
-            <p>Adoptar energías renovables es esencial para enfrentar el cambio climático. Estas tecnologías preservan recursos y promueven la biodiversidad.</p>
+            <p>Adoptar energías renovables es esencial para enfrentar el cambio climático.</p>
         </section>
         <section id="imagenes">
             <h2>Galería de Imágenes</h2>
@@ -53,21 +55,26 @@
                 </div>
             </div>
         </section>
-
+        <section id="destacado">
+            <h2>Elemento Destacado</h2>
+            <p class="destacado">Este texto está posicionado con propiedades avanzadas para resaltar su importancia.</p>
+        </section>
 
         
-</section>
+    </section>
         <section id="pdf">
             <h2>Descarga de libro de energías renovables</h2>
             <a href="energias_renovables_argentina.pdf" download>Haz clic aquí para descargar el PDF</a>
         </section>
 
-
-
-        
+    
+    
     </main>
+    <!-- Botón flotante -->
+    <button class="boton-flotante">Contacto</button>
     <footer>
         <p>&copy; 2024 Mi Página Web</p>
     </footer>
 </body>
 </html>
+
