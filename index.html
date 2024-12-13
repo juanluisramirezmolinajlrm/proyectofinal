@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="styles_positioning.css">
     <link rel="stylesheet" href="styles_responsive.css">
     <link rel="stylesheet" href="styles_grid.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,7 +21,7 @@
             <li><a href="#seccion2">Beneficios Ambientales</a></li>
             <li><a href="#imagenes">Imágenes</a></li>
             <li><a href="#tarjetas">Tarjetas Informativas</a></li>
-            <li><a href="#ventanas">Ventanas Flotantes</a></li>
+            <li><a href="#ventanas-flotantes">Ventanas Flotantes</a></li>
             <li><a href="#pdf">Descarga de PDF</a></li>
             <li><a href="#grid-ejemplo">Ejemplo de Grid</a></li>
         </ul>
@@ -38,37 +37,39 @@
         </section>
         <section id="imagenes">
             <h2>Galería de Imágenes</h2>
-            <img src="Energias-renovables-eolica-solar-celdas-1024x576.jpg" alt="Descripción de Imagen 1" class="imagen">
-            <img src="colage-energias-renovables-y-problema-del-agua.jpg" alt="Descripción de Imagen 2" class="imagen">
+            <img src="Energias-renovables-eolica-solar-celdas-1024x576.jpg" alt="Parque eólico con paneles solares" class="imagen">
+            <img src="colage-energias-renovables-y-problema-del-agua.jpg" alt="Diferentes tipos de energías renovables" class="imagen">
         </section>
         <section id="tarjetas">
             <h2>Tipos de Energías Renovables</h2>
-            <div class="tarjeta">
-                <h3>Solar</h3>
-                <p>La energía solar utiliza paneles solares para convertir la luz del sol en electricidad limpia y sostenible.</p>
-            </div>
-            <div class="tarjeta">
-                <h3>Eólica</h3>
-                <p>La energía eólica se genera mediante turbinas que convierten el viento en energía eléctrica.</p>
-            </div>
-            <div class="tarjeta">
-                <h3>Hidroeléctrica</h3>
-                <p>La energía hidroeléctrica aprovecha la fuerza del agua en movimiento para generar electricidad.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Energía Solar</h3>
+                    <p>La energía solar utiliza paneles fotovoltaicos para transformar la luz solar en electricidad. Es una fuente limpia e inagotable.</p>
+                </div>
+                <div class="card">
+                    <h3>Energía Eólica</h3>
+                    <p>La energía eólica aprovecha el viento mediante aerogeneradores para generar electricidad de forma sostenible.</p>
+                </div>
+                <div class="card">
+                    <h3>Energía Hidroeléctrica</h3>
+                    <p>La hidroeléctrica convierte la energía cinética del agua en electricidad, siendo una de las fuentes renovables más utilizadas.</p>
+                </div>
             </div>
         </section>
-        <section id="ventanas">
-            <h2>Ventanas Flotantes Informativas</h2>
-            <div class="ventana" id="ventana-solar">
-                <h3>Energía Solar</h3>
-                <p>La energía solar puede instalarse en techos residenciales y en grandes parques solares, reduciendo significativamente las emisiones de carbono.</p>
+        <section id="ventanas-flotantes">
+            <h2>Ventanas Flotantes Interactivas</h2>
+            <div class="popup" style="position: relative;">
+                <div class="popup-window" style="top: 0; left: 0;">
+                    <p><strong>Energía Solar:</strong> Ideal para zonas con alta radiación solar, contribuye a reducir la huella de carbono.</p>
+                </div>
+                <button onclick="movePopup(event, '.popup-window')">Mover</button>
             </div>
-            <div class="ventana" id="ventana-eolica">
-                <h3>Energía Eólica</h3>
-                <p>La energía eólica está liderando la transición energética en muchas regiones, proporcionando electricidad a gran escala.</p>
-            </div>
-            <div class="ventana" id="ventana-hidro">
-                <h3>Energía Hidroeléctrica</h3>
-                <p>La energía hidroeléctrica es una fuente confiable y escalable, ideal para grandes redes eléctricas.</p>
+            <div class="popup" style="position: relative;">
+                <div class="popup-window" style="top: 0; left: 0;">
+                    <p><strong>Energía Eólica:</strong> La instalación de parques eólicos en áreas costeras es altamente eficiente.</p>
+                </div>
+                <button onclick="movePopup(event, '.popup-window')">Mover</button>
             </div>
         </section>
         <section id="pdf">
@@ -89,5 +90,13 @@
     <footer>
         <p>&copy; 2024 Mi Página Web</p>
     </footer>
+    <script>
+        function movePopup(event, selector) {
+            const popup = event.target.closest(selector);
+            popup.style.position = "absolute";
+            popup.style.top = `${Math.random() * 200}px`;
+            popup.style.left = `${Math.random() * 200}px`;
+        }
+    </script>
 </body>
 </html>
