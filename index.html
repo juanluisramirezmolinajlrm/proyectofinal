@@ -10,28 +10,7 @@
     <link rel="stylesheet" href="styles_positioning.css">
     <link rel="stylesheet" href="styles_responsive.css">
     <link rel="stylesheet" href="styles_grid.css">
-    <style>
-        .ventana {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 300px;
-            height: 200px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border: 1px solid #ccc;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 1rem;
-            overflow: auto;
-            z-index: 1000;
-        }
-        .ventana .cerrar {
-            position: absolute;
-            top: 5px;
-            right: 10px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-    </style>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -43,6 +22,7 @@
             <li><a href="#seccion2">Beneficios Ambientales</a></li>
             <li><a href="#imagenes">Imágenes</a></li>
             <li><a href="#tarjetas">Tarjetas Informativas</a></li>
+            <li><a href="#ventanas">Ventanas Flotantes</a></li>
             <li><a href="#pdf">Descarga de PDF</a></li>
             <li><a href="#grid-ejemplo">Ejemplo de Grid</a></li>
         </ul>
@@ -62,20 +42,33 @@
             <img src="colage-energias-renovables-y-problema-del-agua.jpg" alt="Descripción de Imagen 2" class="imagen">
         </section>
         <section id="tarjetas">
-            <h2>Tarjetas Informativas</h2>
-            <div class="flex-container">
-                <div class="tarjeta">
-                    <h3>Solar</h3>
-                    <p>Energía obtenida del sol, limpia y abundante.</p>
-                </div>
-                <div class="tarjeta">
-                    <h3>Eólica</h3>
-                    <p>Energía generada por el viento, sostenible y económica.</p>
-                </div>
-                <div class="tarjeta">
-                    <h3>Hidroeléctrica</h3>
-                    <p>Energía del agua en movimiento, eficiente y renovable.</p>
-                </div>
+            <h2>Tipos de Energías Renovables</h2>
+            <div class="tarjeta">
+                <h3>Solar</h3>
+                <p>La energía solar utiliza paneles solares para convertir la luz del sol en electricidad limpia y sostenible.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Eólica</h3>
+                <p>La energía eólica se genera mediante turbinas que convierten el viento en energía eléctrica.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Hidroeléctrica</h3>
+                <p>La energía hidroeléctrica aprovecha la fuerza del agua en movimiento para generar electricidad.</p>
+            </div>
+        </section>
+        <section id="ventanas">
+            <h2>Ventanas Flotantes Informativas</h2>
+            <div class="ventana" id="ventana-solar">
+                <h3>Energía Solar</h3>
+                <p>La energía solar puede instalarse en techos residenciales y en grandes parques solares, reduciendo significativamente las emisiones de carbono.</p>
+            </div>
+            <div class="ventana" id="ventana-eolica">
+                <h3>Energía Eólica</h3>
+                <p>La energía eólica está liderando la transición energética en muchas regiones, proporcionando electricidad a gran escala.</p>
+            </div>
+            <div class="ventana" id="ventana-hidro">
+                <h3>Energía Hidroeléctrica</h3>
+                <p>La energía hidroeléctrica es una fuente confiable y escalable, ideal para grandes redes eléctricas.</p>
             </div>
         </section>
         <section id="pdf">
@@ -96,10 +89,5 @@
     <footer>
         <p>&copy; 2024 Mi Página Web</p>
     </footer>
-    <div class="ventana" id="ventanaFlotante">
-        <span class="cerrar" onclick="document.getElementById('ventanaFlotante').style.display='none'">&times;</span>
-        <h3>Información Adicional</h3>
-        <p>Esta ventana flotante contiene contenido adicional relevante para los visitantes.</p>
-    </div>
 </body>
 </html>
