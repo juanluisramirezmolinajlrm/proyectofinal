@@ -1,0 +1,55 @@
+/* Usar Flexbox para mejorar la disposición de los elementos */
+
+/* Estilo para la barra de navegación, usando Flexbox */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Alineación horizontal de los elementos */
+    align-items: center; /* Alineación vertical centrada */
+    height: 60px; /* Definir una altura para la barra */
+}
+
+/* Alinear los elementos dentro de la galería de imágenes usando Flexbox */
+.flexbox-gallery {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre las imágenes */
+    flex-wrap: wrap; /* Permitir que las imágenes se ajusten en varias filas si es necesario */
+}
+
+.imagen {
+    width: 48%; /* Cada imagen ocupará el 48% del espacio */
+    margin-bottom: 1rem; /* Añadir un margen inferior para separación */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Efecto de transición para el hover */
+}
+
+/* Efecto hover para las imágenes */
+.imagen:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el ratón */
+}
+
+/* Alinear el pie de página usando Flexbox */
+footer {
+    display: flex;
+    justify-content: center; /* Centrado horizontal del contenido */
+    align-items: center; /* Centrado vertical del contenido */
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Mejorar el estilo del encabezado para Flexbox */
+header {
+    display: flex;
+    justify-content: center; /* Centrado horizontal del texto */
+    align-items: center; /* Centrado vertical del texto */
+    height: 100px; /* Altura específica para el encabezado */
+    background-color: #f87234;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
